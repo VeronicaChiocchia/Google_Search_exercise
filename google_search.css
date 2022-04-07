@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    width: 100%;
+}
+
+img.item {
+    display: grid;
+    width: 280px;
+    margin: 0px 0px 0px 0px;
+}
+
+.item {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 550px;
+    height: 25px;
+    border-radius: 24px;
+    border: 1px solid rgb(197, 197, 197);
+    margin-bottom: 20px;
+    
+}
+
+input[type="text"]:hover {
+    box-shadow: -2px 2px 5px rgb(223, 223, 223);
+}
+
+.container2 .item {
+    border: 1px solid #eeeeee;
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    background-color: #eeeeee;
+    border-radius: 4px;
+}
+
+.container2 .item:hover {
+    border: 1px solid rgb(194, 194, 194);
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: right;
+    background-color: #eeeeee;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    padding: 10px;
+}
+
+#input-field1, #input-field2, #input-field3, #input-field4 {
+    border-radius: 0px;
+    height: 15px;
+    width: auto;
+}
+
+label {
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+.grid {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 180px auto;
+    width: 600px;
+}
+
+.grid .item {
+    margin-bottom: 0
+}
+
+#logo-text {
+    position: absolute;
+    bottom: 12px;
+    right: 15px;
+    color: blue;
+}
+
+#logo-div {
+    position: relative;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#advanced-form {
+    width: 600px;
+}
+
+#blue-button {
+    background-color: #4888EF;
+    color: white;
+    justify-content: right;
+    width: fit-content;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #3d74cc;
+    border-radius: 2px;
+}
+
+.container-button {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media (max-width: 650px) {
+    input[type="text"] {
+        width: 90%;
+    }
+    .grid, .container-button {
+        width: 90%;
+    }
+    #advanced-form {
+        width: 90%;
+    }
+}
